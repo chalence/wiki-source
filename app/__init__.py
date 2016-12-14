@@ -10,4 +10,4 @@ app.config.from_object(config[config_name])
 config[config_name].init_app(app)
 
 
-from app import views, errors
+from app import wikisrc, errors
