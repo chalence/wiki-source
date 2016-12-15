@@ -3,12 +3,17 @@
 {% block content %}
   <div class="container">
     <div class="starter-template">
-      <h1>Bootstrap starter template</h1>
+      <h1>Wikipedia Philosophy Crawl</h1>
       <p class="lead">
-        Use this document as a way to quickly start any new project.<br>
-        All you get is this text and a mostly barebones HTML document.
+        Type a search term below to see path that the article takes to
+  get to the Philosophy article on Wikipedia
       </p>
     </div>
+    <form action="/search" method="POST">
+    <input id="mainform" type="text" placeholder="Wikipedia Article" name="article">
+    <button type="submit" style="background-color: #647CDF; color:
+  white;" class="btn btn-default">Go</button>
+    </form>
   </div>
 {% endblock %}
 

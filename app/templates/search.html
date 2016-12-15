@@ -1,0 +1,25 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+  <div class="container">
+    <div class="starter-template">
+      <p class="lead">
+       Here is what you searched for: {{article}}<br>
+      and here is its path to Philosophy on Wikipedia:
+      </p>
+      <ol>
+      {% for i in path %}
+      <li>{{i}}</li>
+      {% endfor %}
+      </ol>
+    </div>
+        <form action="/index">
+    <button type="submit" style="background-color: #647CDF;
+  color:white;" class="btn btn-default">Back to search!</button>
+    </form>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% include "include/footer.html" %}
+{% endblock %}
